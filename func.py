@@ -10,7 +10,7 @@ def get_lower_betwin_two_upper(t: str) -> str:
 
 
 if __name__ == '__main__':
-    line = ''
+    line = 'tvIOlhKhyYwxLnqOsBdGvnuyEZIheApQGOXWeXoLWiDQNJFaXiUWgsKQrDOeZoNlZNRvHnLgCmysUeKnVJXPFIzvdDyleXylnKBfLCjLHntltignbQoiQzTYwZAiRwycdlHfyHNGmkNqSwXUrxgc'
     res = get_lower_betwin_two_upper(line)
 
-    print(len(res))
+    print(f'Результат по строке {line} :\n{res} длинной {len(res)}')
