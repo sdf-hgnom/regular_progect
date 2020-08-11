@@ -10,6 +10,7 @@ def get_lower_betwin_two_upper(t: str) -> str:
 
 
 if __name__ == '__main__':
-    line = 'AiAdAARTtS'
+    line = ''
     res = get_lower_betwin_two_upper(line)
-    print(res)
+
+    print(len(res))
