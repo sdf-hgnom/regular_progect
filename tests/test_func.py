@@ -1,5 +1,6 @@
 import unittest
 import func
+import re
 
 ZERO_INPUT = ''
 ONE_INPUT = 'AiA'
