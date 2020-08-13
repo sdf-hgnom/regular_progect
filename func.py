@@ -25,5 +25,7 @@ if __name__ == '__main__':
     t_line = 'AAiAdS'
     res = get_lower_betwin_two_upper(t_line)
     print(res)
+    res1 = get_lower_betwin_two_upper_re(t_line)
+    print(res1)
 
 
