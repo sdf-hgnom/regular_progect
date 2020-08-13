@@ -3,7 +3,6 @@ import re
 REGULAR_ULU = r'[A-Z]+([(a-z)+])[A-Z]'
 
 
-
 def get_lower_betwin_two_upper(t: str) -> str:
     """Ф-ция вернет list из ,букв нижнего реестра ограниченных буквами верхнего реестра"""
     result = []
@@ -27,5 +26,3 @@ if __name__ == '__main__':
     print(res)
     res1 = get_lower_betwin_two_upper_re(t_line)
     print(res1)
-
-
