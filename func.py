@@ -1,6 +1,6 @@
 import re
 
-REGULAR_ULU = r'[A-Z]+([(a-z)+])[A-Z]'
+REGULAR_ULU = r'([A-Z]([(a-z)])(?=[A-Z]))'
 
 
 def get_lower_betwin_two_upper(t: str) -> str:
@@ -15,13 +15,19 @@ def get_lower_betwin_two_upper(t: str) -> str:
 
 
 def get_lower_betwin_two_upper_re(t: str) -> str:
+    ret = ''
     res = re.findall(REGULAR_ULU, t)
-    return ''.join(res)
+    print(res)
+    for first,ch in res:
+        print(first,ch)
+        ret +=ch
+
+    return ret
 
 
 if __name__ == '__main__':
     line = 'tvIOlhKhyYwxLnqOsBdGvnuyEZIheApQGOXWeXoLWiDQNJFaXiUWgsKQrDOeZoNlZNRvHnLgCmysUeKnVJXPFIzvdDyleXylnKBfLCjLHntltignbQoiQzTYwZAiRwycdlHfyHNGmkNqSwXUrxgc'
-    t_line = 'AAiAdS'
+    t_line = 'AAiAdSoAiP'
     res = get_lower_betwin_two_upper(t_line)
     print(res)
     res1 = get_lower_betwin_two_upper_re(t_line)
